@@ -1,0 +1,127 @@
+body{
+    background-image: url('../img/bg.png');
+}
+
+#content {
+    padding: 0 10px 10px 10px;
+}
+
+.navbar .brand{
+    font-size: 1.25em;
+}
+
+.home-hero{
+    font-family: "Andika", Arial;
+    font-size: 36pt;
+    text-shadow: 1px 1px #000000;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.about-hero{
+    font-family: "Andika", Arial;
+    font-size: 14pt;
+    text-shadow: 1px 1px #FFFFFF;
+    color: grey;
+    text-decoration: none;
+    text-align: left;
+}
+
+.custombtn{
+    opacity: 0.5;
+}
+
+.dishblock a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.dishblock li{
+    padding: 15px;
+    background-color: #DBDBDB;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    float: left;
+    text-align: center;
+}
+
+.dishblock li:hover{
+	background-color: #BCD6E0  ;
+}
+
+.dishblock img{
+    max-width: 280px;
+    max-height: 210px;
+}
+
+.aboutcell{
+    border-radius: 15px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    float: left;
+    text-align: center;
+}
+
+.aboutcell img{
+    width: 150;
+    height: 150;
+    margin: 5px 0 0 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 0 5px #fff;
+}
+
+.aboutext p{
+    margin-left: 45px;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.home-background {
+    margin-top: 0px;
+    padding-top: 20px;
+    background-image: url('../img/background_restaurant.jpg');
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top; 
+}
+
+.home-hero p{
+    line-height: 100%;
+}
+
+.dropdown-menu{
+    padding: 5px;
+}
+
+input[type="text"], input[type="password"]{
+	padding: 12px 6px 12px 6px;
+}
+
+input[type="checkbox"]{
+	margin-top: -5px;
+}
+#editDish{
+	margin-top: 5px;
+}
+

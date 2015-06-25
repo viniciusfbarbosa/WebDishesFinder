@@ -1,0 +1,16 @@
+<div class="dishblock">
+<a href="#dishes/<%- _id %>">
+    <li class="span3">
+        <% if (image == "placeholder") { %>
+            <img class="imgthumb" src="img/placeholder.png" style="width: 240px; height: 180px; margin: 15px;" />
+        <% } else { %>
+            <img class="imgthumb" src="img/uploads/<%- image %>.png" style="margin: 15px;" />
+        <% } %>
+        
+        <b><%- name %><br /></b>
+        served by <%- venue %><br />
+        <%- url %><br />
+        (<%- number %> <%- street %>, <%- city %>)
+    </li>
+</a>
+</div>

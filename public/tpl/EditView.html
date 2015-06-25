@@ -1,0 +1,55 @@
+<div class="container-fluid" id="editDish">
+  <div class="row-fluid">
+    <div class="span7">
+		<div class="btn btn-primary" id="btnSave">
+		    Save
+		</div>
+		<div class="btn" id="btnDelete">
+		    Delete
+		</div>
+		<br>
+		<br />
+
+		<div id="frmDishEdit">
+			<div class="control-group">
+			    Dish: <input type="text" name="name" value="<%- name %>"/><span class="help-inline"></span>
+			</div>
+			<div class="control-group">
+		    	Venue: <input type="text" name="venue" value="<%- venue %>"/><span class="help-inline"></span>
+			</div>
+			<div class="control-group">
+		    	Dish/Venue Info: <input type="text" name="info" value="<%- info %>"/><span class="help-inline"></span>
+		    </div>
+		    <div class="control-group">
+		    	Website URL: Venue: <input type="text" name="url" value="<%- url %>"/><span class="help-inline"></span>
+			</div>
+			<div class="control-group">
+		    	Street address: <input type="text" name="number" value="<%- number %>"/><input type="text" name="street" value="<%- street %>"/><span class="help-inline"></span>
+			</div>
+			
+			<div class="control-group">
+		    	<input type="text" name="city" value="<%- city %>"/>, <input type="text" name="province" value="<%- province %>"/><span class="help-inline"></span>
+			</div>
+			<div class="btn btn-info" id="btnLocation">
+		    	Get my location
+			</div>
+		
+		</div>
+    </div>
+    <div class="span5">
+	    <% if (image == "placeholder") { %>
+	        <img id="uploadPreview" src="img/placeholder.png" draggable="true" style="width: 360px; height: 270px;" />
+	    <% } else { %>
+	        <img id="uploadPreview" src="img/uploads/<%- image %>.png" draggable="true" style="width: 360px; height: 270px;" />
+	    <% } %>
+	    <br />
+	    <span class="btn btn-default btn-file">
+	        Snap Photo / Choose File<input type="file" accept="image/*" id="uploadImage" capture="camera"/>
+	    </span>
+	    <div id="mapContainer" style="width: 450px; height: 250px; border: 1px solid;">
+			[Map div should go here]
+		</div>
+    </div>
+  </div>
+</div>
+
